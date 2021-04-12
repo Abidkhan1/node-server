@@ -4,7 +4,7 @@ const httpServer = require("http").createServer(app);
 const options = { /* ... */ };
 app.use(require('cors')())
 const io = require("socket.io")(httpServer, {
-  origins:["127.0.0.1:3000","www.omnicode.tech/wego/socket","www.omnicode.tech/wego/socket:3000"],
+  origins:["127.0.0.1:3000","http://www.omnicode.tech/wego/socket","http://www.omnicode.tech/wego/socket:3000"],
   path: '/',
   serveClient: false,
   // below are engine.IO options
